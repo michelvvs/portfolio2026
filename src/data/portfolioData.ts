@@ -132,7 +132,7 @@ export const portfolioContent: Record<Language, PortfolioData> = {
       linkedin: 'https://www.linkedin.com/in/michelvvs',
       github: 'https://github.com/michelvvs',
       portfolio: 'https://michelvvs.com',
-      resumeUrl: '/curriculo%20Michel.pdf',
+      resumeUrl: '/MichelVictorCurriculo.pdf',
       resumeLabel: 'Currículo PDF',
     },
     actions: {
@@ -350,7 +350,7 @@ export const portfolioContent: Record<Language, PortfolioData> = {
       linkedin: 'https://www.linkedin.com/in/michelvvs',
       github: 'https://github.com/michelvvs',
       portfolio: 'https://michelvvs.com',
-      resumeUrl: '/curriculo%20Michel.pdf',
+      resumeUrl: '/MichelVictorResumeEN.pdf',
       resumeLabel: 'Resume PDF',
     },
     actions: {
