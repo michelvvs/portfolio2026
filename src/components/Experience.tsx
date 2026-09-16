@@ -8,10 +8,10 @@ export const Experience: React.FC = () => {
   return (
     <section id="experience" className="space-y-6 scroll-mt-24">
       <div className="flex items-center justify-between">
-        <h2 className="text-xs font-mono font-medium uppercase tracking-wider text-neutral-400">
+        <h2 className="text-xs font-mono font-medium uppercase tracking-wider text-[#6272a4]">
           {data.sections.experience.title}
         </h2>
-        <span className="text-xs font-mono text-neutral-500">
+        <span className="text-xs font-mono text-[#6272a4]/80">
           {data.sections.experience.subtitle}
         </span>
       </div>
@@ -20,25 +20,25 @@ export const Experience: React.FC = () => {
         {data.experiences.map((exp, index) => (
           <div
             key={index}
-            className="group relative pl-4 border-l border-neutral-800 hover:border-neutral-700 transition-colors"
+            className="group relative pl-4 border-l border-[#6272a4]/25 hover:border-[#bd93f9]/50 transition-colors"
           >
-            {/* Active / Current indicator dot */}
+            {/* Active / Current indicator dot in Dracula Green */}
             {exp.current && (
               <span className="relative flex h-2 w-2 -left-[21px] top-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#50fa7b] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#50fa7b]"></span>
               </span>
             )}
 
             <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
-              <h3 className="font-medium text-white group-hover:text-emerald-400 transition-colors">
-                {exp.role} <span className="text-neutral-500 font-normal">·</span> {exp.company}
+              <h3 className="font-medium text-[#f8f8f2] group-hover:text-[#bd93f9] transition-colors">
+                {exp.role} <span className="text-[#6272a4] font-normal">·</span> {exp.company}
               </h3>
-              <span className="text-xs font-mono text-neutral-400">{exp.period}</span>
+              <span className="text-xs font-mono text-[#6272a4]">{exp.period}</span>
             </div>
 
             {exp.highlights && exp.highlights.length > 0 ? (
-              <ul className="mt-2.5 space-y-1.5 text-xs sm:text-sm text-neutral-400 leading-relaxed list-disc list-inside marker:text-neutral-600">
+              <ul className="mt-2.5 space-y-1.5 text-xs sm:text-sm text-[#f8f8f2]/80 leading-relaxed list-disc list-inside marker:text-[#bd93f9]">
                 {exp.highlights.map((item, hIdx) => (
                   <li key={hIdx} className="pl-1">
                     <span className="-ml-1">{item}</span>
@@ -46,7 +46,7 @@ export const Experience: React.FC = () => {
                 ))}
               </ul>
             ) : (
-              <p className="mt-2 text-xs sm:text-sm text-neutral-400 leading-relaxed">
+              <p className="mt-2 text-xs sm:text-sm text-[#f8f8f2]/80 leading-relaxed">
                 {exp.description}
               </p>
             )}

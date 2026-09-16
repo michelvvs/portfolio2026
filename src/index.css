@@ -8,14 +8,34 @@
 
   html {
     scroll-behavior: smooth;
+    background-color: #15161e;
+    color: #f8f8f2;
   }
 
   body {
     font-family: var(--font-sans);
+    background-color: #15161e;
+    color: #f8f8f2;
   }
 
   code, pre, .font-mono {
     font-family: var(--font-mono);
+  }
+
+  /* Dracula Midnight Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #15161e;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #282a36;
+    border-radius: 4px;
+    border: 2px solid #15161e;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #44475a;
   }
 }
 

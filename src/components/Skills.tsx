@@ -9,14 +9,14 @@ export const Skills: React.FC = () => {
   const getCategoryIcon = (index: number) => {
     switch (index) {
       case 0:
-        return <Layers className="w-4 h-4 text-cyan-400" />;
+        return <Layers className="w-4 h-4 text-[#8be9fd]" />;
       case 1:
-        return <Palette className="w-4 h-4 text-emerald-400" />;
+        return <Palette className="w-4 h-4 text-[#ff79c6]" />;
       case 2:
-        return <Cpu className="w-4 h-4 text-purple-400" />;
+        return <Cpu className="w-4 h-4 text-[#bd93f9]" />;
       case 3:
       default:
-        return <Server className="w-4 h-4 text-amber-400" />;
+        return <Server className="w-4 h-4 text-[#50fa7b]" />;
     }
   };
 
@@ -24,10 +24,10 @@ export const Skills: React.FC = () => {
     <section id="skills" className="space-y-5 scroll-mt-24">
       {/* Section Header */}
       <div className="flex items-center justify-between">
-        <h2 className="text-xs font-mono font-medium uppercase tracking-wider text-neutral-400">
+        <h2 className="text-xs font-mono font-medium uppercase tracking-wider text-[#6272a4]">
           {data.sections.skills.title}
         </h2>
-        <span className="text-xs font-mono text-neutral-500">
+        <span className="text-xs font-mono text-[#6272a4]/80">
           {data.sections.skills.subtitle}
         </span>
       </div>
@@ -37,20 +37,20 @@ export const Skills: React.FC = () => {
         {data.skills.map((skillGroup, index) => (
           <div
             key={index}
-            className="group relative p-4 sm:p-5 rounded-2xl bg-neutral-900/40 hover:bg-neutral-900/80 border border-neutral-800/70 hover:border-neutral-700 transition-all duration-300 flex flex-col justify-between space-y-3.5 shadow-sm"
+            className="group relative p-4 sm:p-5 rounded-2xl bg-[#202230]/40 hover:bg-[#202230]/80 border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all duration-300 flex flex-col justify-between space-y-3.5 shadow-sm"
           >
             {/* Card Header */}
-            <div className="flex items-center justify-between gap-2 border-b border-neutral-800/60 pb-3">
+            <div className="flex items-center justify-between gap-2 border-b border-[#6272a4]/20 pb-3">
               <div className="flex items-center gap-2">
-                <div className="p-1.5 rounded-lg bg-neutral-800/60 border border-neutral-700/40">
+                <div className="p-1.5 rounded-lg bg-[#15161e]/70 border border-[#6272a4]/25">
                   {getCategoryIcon(index)}
                 </div>
-                <h3 className="text-sm font-semibold text-neutral-200 group-hover:text-white transition-colors">
+                <h3 className="text-sm font-semibold text-[#f8f8f2] group-hover:text-[#bd93f9] transition-colors">
                   {skillGroup.category}
                 </h3>
               </div>
 
-              <span className="text-[11px] font-mono text-neutral-500 bg-neutral-800/40 px-2 py-0.5 rounded-full">
+              <span className="text-[11px] font-mono text-[#6272a4] bg-[#15161e]/80 px-2 py-0.5 rounded-full border border-[#6272a4]/15">
                 {skillGroup.items.length}
               </span>
             </div>
@@ -62,7 +62,7 @@ export const Skills: React.FC = () => {
                   key={item}
                   name={item}
                   size="md"
-                  className="bg-neutral-950/70 hover:bg-neutral-800 border-neutral-800/80 hover:border-emerald-500/30 hover:shadow-sm"
+                  className="bg-[#15161e]/80 hover:bg-[#282a36] border-[#6272a4]/25 hover:border-[#bd93f9]/40 text-[#f8f8f2] hover:shadow-sm"
                 />
               ))}
             </div>

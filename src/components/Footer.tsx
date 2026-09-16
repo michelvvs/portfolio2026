@@ -22,29 +22,29 @@ export const Footer: React.FC = () => {
     )}`;
 
   return (
-    <footer id="contact" className="space-y-8 pt-6 border-t border-neutral-800/60 scroll-mt-24">
+    <footer id="contact" className="space-y-8 pt-6 border-t border-[#6272a4]/20 scroll-mt-24">
       {/* Contact Callout */}
-      <div className="p-5 rounded-2xl bg-neutral-900/40 border border-neutral-800/80 space-y-3">
-        <h3 className="text-base font-medium text-white">
+      <div className="p-5 rounded-2xl bg-[#202230]/40 border border-[#6272a4]/25 space-y-3 shadow-sm">
+        <h3 className="text-base font-medium text-[#f8f8f2]">
           {data.sections.contact.title}
         </h3>
-        <p className="text-xs sm:text-sm text-neutral-400 leading-relaxed">
+        <p className="text-xs sm:text-sm text-[#6272a4] leading-relaxed">
           {data.sections.contact.description}
         </p>
 
         <div className="flex flex-wrap items-center gap-3 pt-1">
           <button
             onClick={handleCopyEmail}
-            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-white text-black hover:bg-neutral-200 transition-colors cursor-pointer"
+            className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-[#f8f8f2] text-[#15161e] hover:bg-white transition-colors cursor-pointer font-sans shadow-sm"
           >
             {copied ? (
               <>
-                <Check className="w-3.5 h-3.5 text-emerald-700" />
-                <span className="text-emerald-800 font-mono font-semibold">{data.actions.copiedEmail}</span>
+                <Check className="w-3.5 h-3.5 text-[#50fa7b]" />
+                <span className="text-[#50fa7b] font-mono font-semibold">{data.actions.copiedEmail}</span>
               </>
             ) : (
               <>
-                <Mail className="w-3.5 h-3.5 text-black" />
+                <Mail className="w-3.5 h-3.5 text-[#15161e]" />
                 <span>{data.actions.copyEmail} ({data.socials.email})</span>
               </>
             )}
@@ -55,32 +55,32 @@ export const Footer: React.FC = () => {
               href={whatsappLink}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 transition-colors group"
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-[#50fa7b]/10 hover:bg-[#50fa7b]/20 text-[#50fa7b] border border-[#50fa7b]/30 transition-colors group shadow-sm"
             >
-              <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 transition-transform" />
+              <WhatsAppIcon className="w-3.5 h-3.5 text-[#50fa7b] group-hover:scale-110 transition-transform" />
               <span>WhatsApp ({data.phone})</span>
-              <ArrowUpRight className="w-3 h-3 text-emerald-500 group-hover:text-emerald-300" />
+              <ArrowUpRight className="w-3 h-3 text-[#50fa7b] group-hover:text-[#50fa7b]/80" />
             </a>
           )}
 
           <a
             href={`mailto:${data.socials.email}`}
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-medium bg-neutral-900 hover:bg-neutral-800 text-neutral-300 hover:text-white border border-neutral-800 transition-colors"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#bd93f9] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-colors shadow-sm group"
           >
             <span>{data.actions.openEmailClient}</span>
-            <ArrowUpRight className="w-3 h-3 text-neutral-500" />
+            <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-[#bd93f9]" />
           </a>
         </div>
       </div>
 
       {/* Bottom meta row */}
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-neutral-500">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-[#6272a4]">
         <div className="flex items-center gap-4">
           <a
             href={data.socials.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-neutral-300 transition-colors inline-flex items-center gap-1.5"
+            className="hover:text-[#bd93f9] transition-colors inline-flex items-center gap-1.5"
           >
             <LinkedinIcon className="w-3.5 h-3.5" />
             <span>LinkedIn</span>
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
             href={data.socials.github}
             target="_blank"
             rel="noreferrer"
-            className="hover:text-neutral-300 transition-colors inline-flex items-center gap-1.5"
+            className="hover:text-[#bd93f9] transition-colors inline-flex items-center gap-1.5"
           >
             <GithubIcon className="w-3.5 h-3.5" />
             <span>GitHub</span>
@@ -99,9 +99,9 @@ export const Footer: React.FC = () => {
               href={whatsappLink}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-emerald-400 transition-colors inline-flex items-center gap-1.5"
+              className="hover:text-[#50fa7b] transition-colors inline-flex items-center gap-1.5"
             >
-              <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400" />
+              <WhatsAppIcon className="w-3.5 h-3.5 text-[#50fa7b]" />
               <span>WhatsApp</span>
             </a>
           )}

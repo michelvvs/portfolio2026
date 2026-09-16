@@ -23,28 +23,28 @@ export const About: React.FC = () => {
     <section id="about" className="space-y-6 scroll-mt-24">
       {/* Section Title matching reference: "About." */}
       <div className="flex items-center gap-1.5">
-        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-white">
+        <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#f8f8f2]">
           {data.bio.aboutTitle}
         </h2>
-        <span className="text-emerald-400 font-bold text-2xl sm:text-3xl">.</span>
+        <span className="text-[#bd93f9] font-bold text-2xl sm:text-3xl">.</span>
       </div>
 
       {/* Editorial Bio with inline interactive links */}
-      <div className="space-y-4 text-sm sm:text-base leading-relaxed text-neutral-300">
+      <div className="space-y-4 text-sm sm:text-base leading-relaxed text-[#f8f8f2]/85">
         <p>
-          <strong className="text-white font-medium">{data.role}</strong>{' '}
+          <strong className="text-[#f8f8f2] font-semibold">{data.role}</strong>{' '}
           {data.bio.intro}
         </p>
-        <p className="text-neutral-400">
+        <p className="text-[#6272a4]">
           {data.bio.details}
         </p>
-        <p className="text-neutral-400 pt-1">
+        <p className="text-[#6272a4] pt-1">
           {data.bio.inlineLinksPrefix}{' '}
           <a
             href={data.socials.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="inline-link text-white hover:text-emerald-400"
+            className="inline-link text-[#f8f8f2] hover:text-[#bd93f9]"
           >
             LinkedIn
           </a>
@@ -53,14 +53,14 @@ export const About: React.FC = () => {
             href={data.socials.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-link text-white hover:text-emerald-400"
+            className="inline-link text-[#f8f8f2] hover:text-[#bd93f9]"
           >
             GitHub
           </a>{' '}
           {language === 'en-US' ? 'or send me an' : 'ou me enviar um'}{' '}
           <button
             onClick={handleCopyEmail}
-            className="inline-link text-white hover:text-emerald-400 cursor-pointer"
+            className="inline-link text-[#f8f8f2] hover:text-[#bd93f9] cursor-pointer"
             title={data.actions.copyEmail}
           >
             {data.bio.emailActionText}
@@ -75,36 +75,36 @@ export const About: React.FC = () => {
           href={data.socials.linkedin}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-neutral-900 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-neutral-800 transition-all"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#bd93f9] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all shadow-sm group"
         >
-          <LinkedinIcon className="w-3.5 h-3.5 text-neutral-400" />
+          <LinkedinIcon className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-[#bd93f9] transition-colors" />
           <span>LinkedIn</span>
-          <ArrowUpRight className="w-3 h-3 text-neutral-500" />
+          <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-[#bd93f9]" />
         </a>
 
         <a
           href={data.socials.github}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-neutral-900 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-neutral-800 transition-all"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#bd93f9] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all shadow-sm group"
         >
-          <GithubIcon className="w-3.5 h-3.5 text-neutral-400" />
+          <GithubIcon className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-[#bd93f9] transition-colors" />
           <span>GitHub</span>
-          <ArrowUpRight className="w-3 h-3 text-neutral-500" />
+          <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-[#bd93f9]" />
         </a>
 
         <button
           onClick={handleCopyEmail}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-neutral-900 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-neutral-800 transition-all cursor-pointer"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#bd93f9] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all cursor-pointer shadow-sm group"
         >
           {copiedEmail ? (
             <>
-              <Check className="w-3.5 h-3.5 text-emerald-400" />
-              <span className="text-emerald-400 font-mono">{data.actions.copiedEmail}</span>
+              <Check className="w-3.5 h-3.5 text-[#50fa7b]" />
+              <span className="text-[#50fa7b] font-mono">{data.actions.copiedEmail}</span>
             </>
           ) : (
             <>
-              <Mail className="w-3.5 h-3.5 text-neutral-400" />
+              <Mail className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-[#bd93f9] transition-colors" />
               <span>{data.socials.email}</span>
             </>
           )}
@@ -115,12 +115,12 @@ export const About: React.FC = () => {
             href={whatsappLink}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-neutral-900 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-neutral-800 transition-all group"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#50fa7b] border border-[#6272a4]/25 hover:border-[#50fa7b]/40 transition-all group shadow-sm"
             title={language === 'en-US' ? 'Open WhatsApp conversation' : 'Abrir conversa no WhatsApp'}
           >
-            <WhatsAppIcon className="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 transition-transform" />
+            <WhatsAppIcon className="w-3.5 h-3.5 text-[#50fa7b] group-hover:scale-110 transition-transform" />
             <span>{data.phone}</span>
-            <ArrowUpRight className="w-3 h-3 text-neutral-500 group-hover:text-emerald-400 transition-colors" />
+            <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-[#50fa7b] transition-colors" />
           </a>
         )}
 
@@ -129,11 +129,11 @@ export const About: React.FC = () => {
             href={data.socials.resumeUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-neutral-900 hover:bg-neutral-800 text-neutral-200 hover:text-white border border-neutral-800 transition-all"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#ff79c6] border border-[#6272a4]/25 hover:border-[#ff79c6]/40 transition-all shadow-sm group"
           >
-            <FileText className="w-3.5 h-3.5 text-neutral-400" />
+            <FileText className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-[#ff79c6] transition-colors" />
             <span>{data.socials.resumeLabel}</span>
-            <ArrowUpRight className="w-3 h-3 text-neutral-500" />
+            <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-[#ff79c6]" />
           </a>
         )}
       </div>

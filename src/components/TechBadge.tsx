@@ -103,25 +103,25 @@ export const getTechIcon = (name: string): React.ReactElement => {
   if (normalized.includes('prisma')) return <SiPrisma className="text-white" />;
   if (normalized.includes('swagger')) return <SiSwagger className="text-[#85EA2D]" />;
   if (normalized.includes('jwt') || normalized.includes('sso')) return <SiJsonwebtokens className="text-[#D63AFF]" />;
-  if (normalized.includes('api')) return <TbApi className="text-emerald-400" />;
+  if (normalized.includes('api')) return <TbApi className="text-[#bd93f9]" />;
 
   // Tools & DevOps
-  if (normalized.includes('github')) return <SiGithub className="text-white" />;
+  if (normalized.includes('github')) return <SiGithub className="text-[#f8f8f2]" />;
   if (normalized.includes('git')) return <SiGit className="text-[#F05032]" />;
   if (normalized.includes('bitbucket')) return <SiBitbucket className="text-[#0052CC]" />;
   if (normalized.includes('vite')) return <SiVite className="text-[#646CFF]" />;
   if (normalized.includes('docker')) return <SiDocker className="text-[#2496ED]" />;
-  if (normalized.includes('ci/cd') || normalized.includes('ci')) return <TbInfinity className="text-[#38BDF8]" />;
+  if (normalized.includes('ci/cd') || normalized.includes('ci')) return <TbInfinity className="text-[#8be9fd]" />;
   if (normalized.includes('figma')) return <SiFigma className="text-[#F24E1E]" />;
   if (normalized.includes('puppeteer')) return <SiPuppeteer className="text-[#00D8A2]" />;
-  if (normalized.includes('apexcharts') || normalized.includes('chart')) return <TbChartLine className="text-[#00E396]" />;
+  if (normalized.includes('apexcharts') || normalized.includes('chart')) return <TbChartLine className="text-[#50fa7b]" />;
 
   // Languages / Others
   if (normalized.includes('inglês') || normalized.includes('português') || normalized.includes('idioma')) {
-    return <TbLanguage className="text-neutral-400" />;
+    return <TbLanguage className="text-[#6272a4]" />;
   }
 
-  return <TbCode className="text-neutral-400" />;
+  return <TbCode className="text-[#6272a4]" />;
 };
 
 export const TechBadge: React.FC<TechBadgeProps> = ({
@@ -134,7 +134,7 @@ export const TechBadge: React.FC<TechBadgeProps> = ({
   if (size === 'md') {
     return (
       <span
-        className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-mono text-neutral-300 bg-neutral-900/80 hover:bg-neutral-800 border border-neutral-800/90 rounded-md transition-all duration-150 hover:border-neutral-700 hover:text-white ${className}`}
+        className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-mono text-[#f8f8f2] bg-[#202230]/90 hover:bg-[#282a36] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 rounded-md transition-all duration-150 ${className}`}
       >
         <span className="flex-shrink-0 text-sm">{icon}</span>
         <span>{name}</span>
@@ -144,7 +144,7 @@ export const TechBadge: React.FC<TechBadgeProps> = ({
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 px-2 py-0.5 text-[11px] font-mono text-neutral-300 bg-neutral-900/90 hover:bg-neutral-800 border border-neutral-800/80 rounded transition-colors ${className}`}
+      className={`inline-flex items-center gap-1.5 px-2 py-0.5 text-[11px] font-mono text-[#f8f8f2]/90 bg-[#202230]/80 hover:bg-[#282a36] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 rounded transition-colors ${className}`}
     >
       <span className="flex-shrink-0 text-xs">{icon}</span>
       <span>{name}</span>

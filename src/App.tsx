@@ -12,13 +12,15 @@ import { Footer } from './components/Footer';
 
 export const AppContent: React.FC = () => {
   return (
-    <div className="relative min-h-screen bg-[#0c0d0e] text-neutral-200 antialiased selection:bg-neutral-800 selection:text-white">
-      {/* Top ambient glow */}
+    <div className="relative min-h-screen bg-[#15161e] text-[#f8f8f2] antialiased selection:bg-[#44475a] selection:text-[#f8f8f2]">
+      {/* Top ambient glow: Dracula Midnight multi-tone glow */}
       <div
         aria-hidden="true"
         className="pointer-events-none fixed inset-0 flex justify-center z-0 overflow-hidden"
       >
-        <div className="w-[700px] h-[400px] bg-emerald-500/8 blur-[160px] rounded-full -top-40 relative" />
+        <div className="w-[650px] h-[380px] bg-[#bd93f9]/10 blur-[150px] rounded-full -top-40 relative" />
+        <div className="w-[450px] h-[300px] bg-[#ff79c6]/8 blur-[160px] rounded-full -top-20 -left-20 relative" />
+        <div className="w-[400px] h-[260px] bg-[#8be9fd]/6 blur-[140px] rounded-full -top-10 -right-20 relative" />
       </div>
 
       {/* Fixed Navbar with brand, language switcher, and smooth section links */}
