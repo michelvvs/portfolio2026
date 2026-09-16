@@ -26,7 +26,7 @@ export const About: React.FC = () => {
         <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#f8f8f2]">
           {data.bio.aboutTitle}
         </h2>
-        <span className="text-[#bd93f9] font-bold text-2xl sm:text-3xl">.</span>
+        <span className="text-emerald-400 font-bold text-2xl sm:text-3xl">.</span>
       </div>
 
       {/* Editorial Bio with inline interactive links */}
@@ -44,7 +44,7 @@ export const About: React.FC = () => {
             href={data.socials.linkedin}
             target="_blank"
             rel="noreferrer"
-            className="inline-link text-[#f8f8f2] hover:text-[#bd93f9]"
+            className="inline-link text-[#f8f8f2] hover:text-emerald-400"
           >
             LinkedIn
           </a>
@@ -53,14 +53,14 @@ export const About: React.FC = () => {
             href={data.socials.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-link text-[#f8f8f2] hover:text-[#bd93f9]"
+            className="inline-link text-[#f8f8f2] hover:text-emerald-400"
           >
             GitHub
           </a>{' '}
           {language === 'en-US' ? 'or send me an' : 'ou me enviar um'}{' '}
           <button
             onClick={handleCopyEmail}
-            className="inline-link text-[#f8f8f2] hover:text-[#bd93f9] cursor-pointer"
+            className="inline-link text-[#f8f8f2] hover:text-emerald-400 cursor-pointer"
             title={data.actions.copyEmail}
           >
             {data.bio.emailActionText}
@@ -75,36 +75,36 @@ export const About: React.FC = () => {
           href={data.socials.linkedin}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#bd93f9] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all shadow-sm group"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-emerald-400 border border-[#6272a4]/25 hover:border-emerald-500/40 transition-all shadow-sm group"
         >
-          <LinkedinIcon className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-[#bd93f9] transition-colors" />
+          <LinkedinIcon className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-emerald-400 transition-colors" />
           <span>LinkedIn</span>
-          <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-[#bd93f9]" />
+          <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-emerald-400" />
         </a>
 
         <a
           href={data.socials.github}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#bd93f9] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all shadow-sm group"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-emerald-400 border border-[#6272a4]/25 hover:border-emerald-500/40 transition-all shadow-sm group"
         >
-          <GithubIcon className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-[#bd93f9] transition-colors" />
+          <GithubIcon className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-emerald-400 transition-colors" />
           <span>GitHub</span>
-          <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-[#bd93f9]" />
+          <ArrowUpRight className="w-3 h-3 text-[#6272a4] group-hover:text-emerald-400" />
         </a>
 
         <button
           onClick={handleCopyEmail}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-[#bd93f9] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all cursor-pointer shadow-sm group"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-medium bg-[#202230] hover:bg-[#282a36] text-[#f8f8f2] hover:text-emerald-400 border border-[#6272a4]/25 hover:border-emerald-500/40 transition-all cursor-pointer shadow-sm group"
         >
           {copiedEmail ? (
             <>
-              <Check className="w-3.5 h-3.5 text-[#50fa7b]" />
-              <span className="text-[#50fa7b] font-mono">{data.actions.copiedEmail}</span>
+              <Check className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="text-emerald-400 font-mono">{data.actions.copiedEmail}</span>
             </>
           ) : (
             <>
-              <Mail className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-[#bd93f9] transition-colors" />
+              <Mail className="w-3.5 h-3.5 text-[#6272a4] group-hover:text-emerald-400 transition-colors" />
               <span>{data.socials.email}</span>
             </>
           )}

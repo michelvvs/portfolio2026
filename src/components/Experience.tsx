@@ -20,7 +20,7 @@ export const Experience: React.FC = () => {
         {data.experiences.map((exp, index) => (
           <div
             key={index}
-            className="group relative pl-4 border-l border-[#6272a4]/25 hover:border-[#bd93f9]/50 transition-colors"
+            className="group relative pl-4 border-l border-[#6272a4]/25 hover:border-emerald-500/50 transition-colors"
           >
             {/* Active / Current indicator dot */}
             {exp.current && (
@@ -31,14 +31,14 @@ export const Experience: React.FC = () => {
             )}
 
             <div className="flex flex-wrap items-baseline justify-between gap-2 text-sm">
-              <h3 className="font-medium text-[#f8f8f2] group-hover:text-[#bd93f9] transition-colors">
+              <h3 className="font-medium text-[#f8f8f2] group-hover:text-emerald-400 transition-colors">
                 {exp.role} <span className="text-[#6272a4] font-normal">·</span> {exp.company}
               </h3>
               <span className="text-xs font-mono text-[#6272a4]">{exp.period}</span>
             </div>
 
             {exp.highlights && exp.highlights.length > 0 ? (
-              <ul className="mt-2.5 space-y-1.5 text-xs sm:text-sm text-[#f8f8f2]/80 leading-relaxed list-disc list-inside marker:text-[#bd93f9]">
+              <ul className="mt-2.5 space-y-1.5 text-xs sm:text-sm text-[#f8f8f2]/80 leading-relaxed list-disc list-inside marker:text-emerald-400">
                 {exp.highlights.map((item, hIdx) => (
                   <li key={hIdx} className="pl-1">
                     <span className="-ml-1">{item}</span>

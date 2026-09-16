@@ -49,14 +49,14 @@ export const Navbar: React.FC = () => {
       }`}
     >
       <div className="max-w-4xl mx-auto px-6 flex items-center justify-between gap-4">
-        {/* Brand Logo: HTML tag "<michelvvs />" in Dracula aesthetic */}
+        {/* Brand Logo: HTML tag "<michelvvs />" in green & dark aesthetic */}
         <a
           href="#"
           className="text-base sm:text-lg font-mono font-bold tracking-tight text-[#f8f8f2] flex items-center group flex-shrink-0 transition-transform hover:scale-105"
         >
-          <span className="text-[#bd93f9] group-hover:text-[#ff79c6] transition-colors">&lt;</span>
+          <span className="text-emerald-400 group-hover:text-emerald-300 transition-colors">&lt;</span>
           <span className="text-[#f8f8f2] px-0.5">michelvvs</span>
-          <span className="text-[#bd93f9] group-hover:text-[#ff79c6] transition-colors"> /&gt;</span>
+          <span className="text-emerald-400 group-hover:text-emerald-300 transition-colors"> /&gt;</span>
         </a>
 
         {/* Desktop Nav Links */}
@@ -75,7 +75,7 @@ export const Navbar: React.FC = () => {
               >
                 {item.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-[#bd93f9] rounded-full shadow-[0_0_8px_rgba(189,147,249,0.5)]" />
+                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-emerald-400 rounded-full shadow-[0_0_8px_rgba(52,211,153,0.5)]" />
                 )}
               </a>
             );
@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
               key={item.href}
               href={item.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block py-1.5 text-sm font-medium text-[#6272a4] hover:text-[#bd93f9] transition-colors"
+              className="block py-1.5 text-sm font-medium text-[#6272a4] hover:text-emerald-400 transition-colors"
             >
               {item.label}
             </a>

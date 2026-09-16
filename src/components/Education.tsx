@@ -30,7 +30,7 @@ export const Education: React.FC = () => {
                 {edu.degree}
               </h3>
               <p className="text-xs text-[#6272a4] mt-0.5">
-                {edu.institution} {edu.status && <span className="text-[#bd93f9]">· {edu.status}</span>}
+                {edu.institution} {edu.status && <span className="text-emerald-400">· {edu.status}</span>}
               </p>
             </div>
             <span className="text-xs font-mono text-[#6272a4] self-start sm:self-auto">

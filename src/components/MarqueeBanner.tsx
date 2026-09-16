@@ -15,7 +15,7 @@ export const MarqueeBanner: React.FC = () => {
               <span className="text-xs sm:text-sm font-mono font-bold tracking-wider text-[#6272a4] hover:text-[#f8f8f2] transition-colors cursor-default">
                 {word}
               </span>
-              <span className="text-[#bd93f9] font-mono font-bold text-xs sm:text-sm select-none">
+              <span className="text-emerald-400 font-mono font-bold text-xs sm:text-sm select-none">
                 /
               </span>
             </React.Fragment>
@@ -29,7 +29,7 @@ export const MarqueeBanner: React.FC = () => {
               <span className="text-xs sm:text-sm font-mono font-bold tracking-wider text-[#6272a4] hover:text-[#f8f8f2] transition-colors cursor-default">
                 {word}
               </span>
-              <span className="text-[#ff79c6] font-mono font-bold text-xs sm:text-sm select-none">
+              <span className="text-emerald-400 font-mono font-bold text-xs sm:text-sm select-none">
                 /
               </span>
             </React.Fragment>

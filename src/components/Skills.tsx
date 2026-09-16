@@ -11,12 +11,12 @@ export const Skills: React.FC = () => {
       case 0:
         return <Layers className="w-4 h-4 text-[#8be9fd]" />;
       case 1:
-        return <Palette className="w-4 h-4 text-[#ff79c6]" />;
+        return <Palette className="w-4 h-4 text-emerald-400" />;
       case 2:
-        return <Cpu className="w-4 h-4 text-[#bd93f9]" />;
+        return <Cpu className="w-4 h-4 text-[#ff79c6]" />;
       case 3:
       default:
-        return <Server className="w-4 h-4 text-[#50fa7b]" />;
+        return <Server className="w-4 h-4 text-emerald-400" />;
     }
   };
 
@@ -37,7 +37,7 @@ export const Skills: React.FC = () => {
         {data.skills.map((skillGroup, index) => (
           <div
             key={index}
-            className="group relative p-4 sm:p-5 rounded-2xl bg-[#202230]/40 hover:bg-[#202230]/80 border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all duration-300 flex flex-col justify-between space-y-3.5 shadow-sm"
+            className="group relative p-4 sm:p-5 rounded-2xl bg-[#202230]/40 hover:bg-[#202230]/80 border border-[#6272a4]/25 hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between space-y-3.5 shadow-sm"
           >
             {/* Card Header */}
             <div className="flex items-center justify-between gap-2 border-b border-[#6272a4]/20 pb-3">
@@ -45,7 +45,7 @@ export const Skills: React.FC = () => {
                 <div className="p-1.5 rounded-lg bg-[#15161e]/70 border border-[#6272a4]/25">
                   {getCategoryIcon(index)}
                 </div>
-                <h3 className="text-sm font-semibold text-[#f8f8f2] group-hover:text-[#bd93f9] transition-colors">
+                <h3 className="text-sm font-semibold text-[#f8f8f2] group-hover:text-emerald-400 transition-colors">
                   {skillGroup.category}
                 </h3>
               </div>
@@ -62,7 +62,7 @@ export const Skills: React.FC = () => {
                   key={item}
                   name={item}
                   size="md"
-                  className="bg-[#15161e]/80 hover:bg-[#282a36] border-[#6272a4]/25 hover:border-[#bd93f9]/40 text-[#f8f8f2] hover:shadow-sm"
+                  className="bg-[#15161e]/80 hover:bg-[#282a36] border-[#6272a4]/25 hover:border-emerald-500/40 text-[#f8f8f2] hover:shadow-sm"
                 />
               ))}
             </div>

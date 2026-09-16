@@ -19,7 +19,7 @@ export const LanguageSelector: React.FC<{ className?: string }> = ({ className =
         onClick={() => setLanguage('pt-BR')}
         className={`px-2 py-1 rounded-md font-semibold transition-all duration-200 cursor-pointer ${
           language === 'pt-BR'
-            ? 'bg-[#bd93f9]/20 text-[#bd93f9] border border-[#bd93f9]/40 shadow-[0_0_8px_rgba(189,147,249,0.25)]'
+            ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-[0_0_8px_rgba(52,211,153,0.25)]'
             : 'text-[#6272a4] hover:text-[#f8f8f2]'
         }`}
         title="Português (Brasil)"
@@ -32,7 +32,7 @@ export const LanguageSelector: React.FC<{ className?: string }> = ({ className =
         onClick={() => setLanguage('en-US')}
         className={`px-2 py-1 rounded-md font-semibold transition-all duration-200 cursor-pointer ${
           language === 'en-US'
-            ? 'bg-[#bd93f9]/20 text-[#bd93f9] border border-[#bd93f9]/40 shadow-[0_0_8px_rgba(189,147,249,0.25)]'
+            ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 shadow-[0_0_8px_rgba(52,211,153,0.25)]'
             : 'text-[#6272a4] hover:text-[#f8f8f2]'
         }`}
         title="English (US)"

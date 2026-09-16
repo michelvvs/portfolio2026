@@ -103,7 +103,7 @@ export const getTechIcon = (name: string): React.ReactElement => {
   if (normalized.includes('prisma')) return <SiPrisma className="text-white" />;
   if (normalized.includes('swagger')) return <SiSwagger className="text-[#85EA2D]" />;
   if (normalized.includes('jwt') || normalized.includes('sso')) return <SiJsonwebtokens className="text-[#D63AFF]" />;
-  if (normalized.includes('api')) return <TbApi className="text-[#bd93f9]" />;
+  if (normalized.includes('api')) return <TbApi className="text-emerald-400" />;
 
   // Tools & DevOps
   if (normalized.includes('github')) return <SiGithub className="text-[#f8f8f2]" />;
@@ -134,7 +134,7 @@ export const TechBadge: React.FC<TechBadgeProps> = ({
   if (size === 'md') {
     return (
       <span
-        className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-mono text-[#f8f8f2] bg-[#202230]/90 hover:bg-[#282a36] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 rounded-md transition-all duration-150 ${className}`}
+        className={`inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-mono text-[#f8f8f2] bg-[#202230]/90 hover:bg-[#282a36] border border-[#6272a4]/25 hover:border-emerald-500/40 rounded-md transition-all duration-150 ${className}`}
       >
         <span className="flex-shrink-0 text-sm">{icon}</span>
         <span>{name}</span>
@@ -144,7 +144,7 @@ export const TechBadge: React.FC<TechBadgeProps> = ({
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 px-2 py-0.5 text-[11px] font-mono text-[#f8f8f2]/90 bg-[#202230]/80 hover:bg-[#282a36] border border-[#6272a4]/25 hover:border-[#bd93f9]/40 rounded transition-colors ${className}`}
+      className={`inline-flex items-center gap-1.5 px-2 py-0.5 text-[11px] font-mono text-[#f8f8f2]/90 bg-[#202230]/80 hover:bg-[#282a36] border border-[#6272a4]/25 hover:border-emerald-500/40 rounded transition-colors ${className}`}
     >
       <span className="flex-shrink-0 text-xs">{icon}</span>
       <span>{name}</span>

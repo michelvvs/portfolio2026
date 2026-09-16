@@ -21,12 +21,12 @@ export const Hero: React.FC = () => {
       {/* Left Column: Circular Cyberpunk/Clean Framed Avatar with </> badge */}
       <div className="relative group flex-shrink-0">
         {/* Glow behind circular frame */}
-        <div className="absolute -inset-1 rounded-full bg-[#bd93f9]/20 blur-xl group-hover:bg-[#bd93f9]/35 transition-all duration-500" />
+        <div className="absolute -inset-1 rounded-full bg-emerald-500/20 blur-xl group-hover:bg-emerald-500/35 transition-all duration-500" />
 
         {/* Circular Frame container */}
         <div className="relative w-52 h-52 sm:w-64 sm:h-64">
           {/* Avatar Image filling the circle to the border */}
-          <div className="w-full h-full rounded-full border-2 border-[#bd93f9] overflow-hidden bg-[#1e1f29] shadow-[0_0_30px_rgba(189,147,249,0.22)]">
+          <div className="w-full h-full rounded-full border-2 border-emerald-400 overflow-hidden bg-[#15161e] shadow-[0_0_30px_rgba(52,211,153,0.22)]">
             <img
               src={avatarImg}
               alt={data.name}
@@ -35,7 +35,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* </> Code Badge cutting into the bottom right corner of the circle */}
-          <div className="absolute -bottom-1.5 -right-1.5 sm:bottom-0.5 sm:right-0.5 bg-[#15161e] border-2 border-[#bd93f9] text-[#bd93f9] font-mono font-bold text-sm sm:text-base px-2.5 py-0.5 rounded-full shadow-xl flex items-center justify-center tracking-tighter select-none z-10">
+          <div className="absolute -bottom-1.5 -right-1.5 sm:bottom-0.5 sm:right-0.5 bg-[#15161e] border-2 border-emerald-400 text-emerald-400 font-mono font-bold text-sm sm:text-base px-2.5 py-0.5 rounded-full shadow-xl flex items-center justify-center tracking-tighter select-none z-10">
             &lt;/&gt;
           </div>
         </div>
@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#202230]/50 border border-[#6272a4]/25 text-[#6272a4]">
-            <MapPin className="w-3.5 h-3.5 text-[#bd93f9]" />
+            <MapPin className="w-3.5 h-3.5 text-emerald-400" />
             <span>{data.location}</span>
           </div>
         </div>
@@ -63,7 +63,7 @@ export const Hero: React.FC = () => {
         <div className="space-y-2">
           <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-[#f8f8f2] leading-tight">
             {data.hero.greeting}
-            <span className="text-[#bd93f9]">.</span>
+            <span className="text-emerald-400">.</span>
           </h1>
 
           {/* Role & Level Pill */}

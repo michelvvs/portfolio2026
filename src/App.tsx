@@ -18,9 +18,9 @@ export const AppContent: React.FC = () => {
         aria-hidden="true"
         className="pointer-events-none fixed inset-0 flex justify-center z-0 overflow-hidden"
       >
-        <div className="w-[650px] h-[380px] bg-[#bd93f9]/10 blur-[150px] rounded-full -top-40 relative" />
-        <div className="w-[450px] h-[300px] bg-[#ff79c6]/8 blur-[160px] rounded-full -top-20 -left-20 relative" />
-        <div className="w-[400px] h-[260px] bg-[#8be9fd]/6 blur-[140px] rounded-full -top-10 -right-20 relative" />
+        <div className="w-[650px] h-[380px] bg-emerald-500/10 blur-[150px] rounded-full -top-40 relative" />
+        <div className="w-[450px] h-[300px] bg-[#6272a4]/8 blur-[160px] rounded-full -top-20 -left-20 relative" />
+        <div className="w-[400px] h-[260px] bg-emerald-400/6 blur-[140px] rounded-full -top-10 -right-20 relative" />
       </div>
 
       {/* Fixed Navbar with brand, language switcher, and smooth section links */}

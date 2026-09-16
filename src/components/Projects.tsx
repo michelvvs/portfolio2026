@@ -20,11 +20,11 @@ export const Projects: React.FC = () => {
       <div className="grid grid-cols-1 gap-3">
         {data.projects.map((project, index) => {
           const CardContent = (
-            <div className="group relative p-4 rounded-xl bg-[#202230]/40 hover:bg-[#202230]/80 border border-[#6272a4]/25 hover:border-[#bd93f9]/40 transition-all duration-200 shadow-sm">
+            <div className="group relative p-4 rounded-xl bg-[#202230]/40 hover:bg-[#202230]/80 border border-[#6272a4]/25 hover:border-emerald-500/40 transition-all duration-200 shadow-sm">
               <div className="flex items-start justify-between gap-4">
                 <div className="space-y-1.5 flex-1">
                   <div className="flex items-center gap-2">
-                    <h3 className="text-sm sm:text-base font-medium text-[#f8f8f2] group-hover:text-[#bd93f9] transition-colors">
+                    <h3 className="text-sm sm:text-base font-medium text-[#f8f8f2] group-hover:text-emerald-400 transition-colors">
                       {project.title}
                     </h3>
                     <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-[#15161e]/80 text-[#6272a4] border border-[#6272a4]/20">
@@ -37,7 +37,7 @@ export const Projects: React.FC = () => {
                 </div>
 
                 {project.url && (
-                  <ArrowUpRight className="w-4 h-4 text-[#6272a4] group-hover:text-[#bd93f9] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all flex-shrink-0 mt-0.5" />
+                  <ArrowUpRight className="w-4 h-4 text-[#6272a4] group-hover:text-emerald-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all flex-shrink-0 mt-0.5" />
                 )}
               </div>
 
