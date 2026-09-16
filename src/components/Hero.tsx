@@ -47,8 +47,8 @@ export const Hero: React.FC = () => {
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-2.5 text-xs font-mono text-[#6272a4]">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#202230]/90 border border-[#6272a4]/30 shadow-sm">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#50fa7b] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[#50fa7b]"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
             <span className="text-[#f8f8f2] font-medium">{data.status}</span>
           </div>
@@ -72,7 +72,7 @@ export const Hero: React.FC = () => {
               {data.hero.rolePrimary}
             </span>
             {data.hero.roleSecondary && (
-              <span className="px-2.5 py-0.5 rounded-md bg-[#bd93f9]/15 border border-[#bd93f9]/35 text-[#bd93f9] font-mono text-xs sm:text-sm font-bold tracking-wide shadow-[0_0_12px_rgba(189,147,249,0.18)]">
+              <span className="px-2.5 py-0.5 rounded-md bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 font-mono text-xs sm:text-sm font-bold tracking-wide shadow-[0_0_12px_rgba(52,211,153,0.15)]">
                 {data.hero.roleSecondary}
               </span>
             )}

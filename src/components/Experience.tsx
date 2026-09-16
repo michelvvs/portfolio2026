@@ -22,11 +22,11 @@ export const Experience: React.FC = () => {
             key={index}
             className="group relative pl-4 border-l border-[#6272a4]/25 hover:border-[#bd93f9]/50 transition-colors"
           >
-            {/* Active / Current indicator dot in Dracula Green */}
+            {/* Active / Current indicator dot */}
             {exp.current && (
               <span className="relative flex h-2 w-2 -left-[21px] top-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#50fa7b] opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#50fa7b]"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
             )}
 
