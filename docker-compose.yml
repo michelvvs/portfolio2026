@@ -1,0 +1,18 @@
+# Portfolio estático em container nginx, sem publicar portas: o proxy reverso
+# (Caddy) acessa pela rede compartilhada com o apelido "portfolio-web".
+#   docker compose up -d --build
+services:
+  web:
+    build: .
+    image: portfolio-web:latest
+    container_name: portfolio-web-1
+    restart: unless-stopped
+    networks:
+      default: {}
+      proxy:
+        aliases: [portfolio-web]
+
+networks:
+  proxy:
+    name: ${PROXY_NETWORK:-precigasmed_default}
+    external: true
